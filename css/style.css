@@ -320,9 +320,9 @@ h3.heading:after {
     border: 1px solid #ddd;
     padding: 3em 2em;
 }
-.aboutbottomleft img, .abouttopright img{
-    height: 300px;
-}
+/*.aboutbottomleft img, .abouttopright img{*/
+    /*height: 300px;*/
+/*}*/
 .abouttop {
     margin-bottom: 3em;
     margin-top: 3em;
@@ -1285,7 +1285,7 @@ div#blog {
 /*-- banner-top --*/
 
 .banner-top {
-    background: url(../images/banner1.jpg) no-repeat 0px 0px;
+    background: url(../images/banner-repairs/banner1-1.jpg) no-repeat 0px 0px;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -1295,7 +1295,7 @@ div#blog {
 }
 
 .banner-top1 {
-    background: url(../images/banner2.jpg) no-repeat 0px 0px;
+    background: url(../images/banner-repairs/banner2.jpg) no-repeat 0px 0px;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -1305,7 +1305,7 @@ div#blog {
 }
 
 .banner-top2 {
-    background: url(../images/banner3.jpg) no-repeat 0px 0px;
+    background: url(../images/banner-repairs/banner3.jpg) no-repeat 0px 0px;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -1315,7 +1315,7 @@ div#blog {
 }
 
 .banner-top3 {
-    background: url(../images/banner4.jpg) no-repeat 0px 0px;
+    background: url(../images/banner-repairs/banner4.jpg) no-repeat 0px 0px;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -1354,7 +1354,7 @@ div#blog {
 }
 
 .banner-info_agileits_w3ls p {
-    font-size: 1em;
+    font-size: 1.5em;
     color: #fff;
     margin: 1.5em 0;
     letter-spacing: 6px;
