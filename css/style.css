@@ -675,7 +675,8 @@ figure.effect-jazz {
 }
 
 figure.effect-jazz img {
-	opacity: 0.8;
+    opacity: 0.8;
+    height: 350px;
 }
 figure.effect-jazz figcaption::after,
 figure.effect-jazz img,
@@ -994,6 +995,11 @@ background: rgba(0, 0, 0, 0.17);
 .view img {
    display: block;
    position: relative;
+}
+#myModalDirector h4, #myModalManager h4, #myModalDesigner h4, #myModalInstaller h4{
+    color: rgb(173, 75, 75);
+    text-align: center;
+    text-transform: none;
 }
 /* SECOND EFFECTS */
 
