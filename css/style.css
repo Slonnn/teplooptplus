@@ -267,13 +267,13 @@ ul.top-links.social li {
     margin-top: 4em;
 }
 .bottomleft h3 {
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     font-size: 26px;
     color: #000;
     line-height: 40px;
 }
 .bottomleft p {
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     font-size: 15px;
     color: #696969;
     line-height: 26px;
@@ -1785,7 +1785,10 @@ div#blog {
 	}
 	.aboutbottomright {
 		margin-top: 2em;
-	}
+    }
+    .services{
+        height: 1330px;
+    }
 	.services-right-grid {
 		width: 50%;
 		float: left;
@@ -1793,7 +1796,11 @@ div#blog {
 	}
 	.services-right-grid:nth-child(3),.services-right-grid:nth-child(4){
 		margin-bottom: 0em;
-	}
+    }
+    .ab-left{
+        left: 85px;
+        width: 591px;
+    }
 	.h-f {
 		margin-bottom: 1%;
 	}
@@ -1811,7 +1818,16 @@ div#blog {
 	}
 	.textagile {
 		padding: 1em 1em 4em;
-	}
+    }
+    .grid-top-1{
+        top: -229px;
+    }
+    .grid-top-2{
+        top: -245px;
+    }
+    .modal-personal{
+        left: -75px!important;
+    }
 }
 @media (max-width: 900px) {
     .navbar-brand > img {
@@ -1861,6 +1877,9 @@ div#blog {
     }
     .banner-info_teploopt p {
         font-size: 1.2em;
+    }
+    .teploopt {
+        margin-left: 0px!important;
     }
     .modal-personal{
         left: -52px!important;
@@ -1946,8 +1965,11 @@ div#blog {
 	.textagile {
 		padding: 1em 1em 4em;
     }
+    .modal-service-up{
+        left: 122px;
+    }
     .teploopt {
-        margin-left: 78px!important;
+        margin-left: -35px!important;
     }
     .modal-personal{
         left: 104px!important;
@@ -1960,8 +1982,14 @@ div#blog {
 	.second-effect .mask h6 {
 		padding: 3em 0 0em;
     }
+    .modal-service-up{
+        left: 92px;
+    }
     .teploopt {
-        margin-left: 40px!important;
+        margin-left: -103px!important;
+    }
+    .h-f{
+        padding-left: 32px;
     }
     .modal-personal{
         left: 71px!important;
@@ -1980,7 +2008,19 @@ div#blog {
 	}
 	.about i.fa.fa-lightbulb-o {
 		margin-right: .4em;
-	}
+    }
+    .services{
+        height: 2400px;
+    }
+    .grid-top-1{
+        top: 0px;
+    }
+    .grid-top-2{
+        top: 0px;
+    }
+    .modal-service-up{
+        left: 30px;
+    }
 	.services-right-grid {
 		width: 100%;
 		float: none;
@@ -1994,8 +2034,13 @@ div#blog {
 	.second-effect .mask h6 {
 		padding: 5.5em 0 0em;
     }
+    .h-f {
+        width: 100%;
+        padding-left: 225px!important;
+		margin-right: 0px;
+	}
     .teploopt {
-        margin-left: 3px!important;
+        margin-left: -212px!important;
     }
     .modal-personal{
         left: 5px!important;
@@ -2011,14 +2056,30 @@ div#blog {
 	.grid figure figcaption {
 		padding: 2em 0em;
     }
+    .h-f {
+        width: 100%;
+        padding-left: 247px!important;
+    }
+    .modal-service-up{
+        left: 10px;
+    }
+    .teploopt {
+        margin-left: -251px!important;
+    }
     .modal-personal{
         width: 414px!important;
         left: 5px!important;
     }
 }
 @media (max-width:425px){
+    .services {
+        height: 2431px;
+    }
+    .teploopt {
+        margin-left: -266px!important;
+    }
     .modal-personal{
-        width: 394px!important;
+        width: 395px!important;
     }
     .modal-service-up{
         left: 2px;
@@ -2068,11 +2129,12 @@ div#blog {
         left: -3px;
     }
     .teploopt {
-        margin-left: 69px!important;
+        margin-left: -277px!important;
     }
-    /* .clearfix{
-        width: 395px;
-    } */
+    .h-f {
+        width: 100%;
+        padding-left: 263px!important;
+    }
     .modal-personal{
         width: 386px!important;
         left: 5px!important;
@@ -2083,14 +2145,18 @@ div#blog {
 		margin: 6em 0em 4em;
 	}
 	.h-f {
-		width: 100%;
+        width: 100%;
+        padding-left: 276px!important;
 	}
 	.second-effect .mask h6 {
 		padding: 4.5em 0 0em;
 	}
 	.teploopt-post-img a {
 		min-height: 160px;
-	}
+    }
+    .services {
+        height: 2554px;
+    }
 	.modal-header {
 		font-size: 1.8em;
 		letter-spacing: 3px;
@@ -2100,7 +2166,10 @@ div#blog {
         width: 362px;
     }
     .teploopt {
-        margin-left: 52px!important;
+        margin-left: -307px!important;
+    }
+    .modal-personal {
+        width: 353px!important;
     }
 }
 @media (max-width: 375px) {
@@ -2112,7 +2181,7 @@ div#blog {
 	}
 	.contact iframe {
 		height: 300px;
-	}
+    }
 	.teplo-info h2, .teplo-info h3 {
 		font-size: 1.8em;
 	}
@@ -2134,13 +2203,17 @@ div#blog {
         width: 362px;
     }
     .teploopt {
-        margin-left: 48px!important;
+        margin-left: -316px!important;
     }
-    /* .clearfix{
-        width: 350px!important;
-    } */
+    .h-f {
+        width: 100%;
+        padding-left: 282px!important;
+	}
 }
 @media (max-width:320px) {
+    .media-min{
+        height: 528px;
+    }
 	/*.navbar-brand {*/
 		/*font-size: 26px;*/
 	/*}*/
@@ -2182,9 +2255,16 @@ div#blog {
         left: -3px;
         width: 306px;
     }
-    .teploopt{
-        margin-left: 20px!important;
+    .services {
+        height: 2657px;
     }
+    .teploopt {
+        margin-left: -371px!important;
+    }
+    .h-f {
+        width: 100%;
+        padding-left: 308px!important;
+	}
     .modal-personal{
         width: 290px!important;
     }

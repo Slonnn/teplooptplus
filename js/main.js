@@ -20,7 +20,6 @@ $(document).ready(function() {
     });
 });
 
-<!-- flexisel -->
     $(window).load(function() {
         $("#flexiselDemo1").flexisel({
             visibleItems: 4,
@@ -47,12 +46,10 @@ $(document).ready(function() {
 
     });
 
-<!-- gallery-pop-up -->
     $(window).load(function() {
         $.fn.lightspeedBox();
     });
 
-<!-- here stars scrolling icon -->
     $(document).ready(function() {
         /*
             var defaults = {
