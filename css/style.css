@@ -240,7 +240,7 @@ ul.top-links.social li {
 }
 /*-- //nav --*/
 .teplo-banner {
-    background: url(../images/header-img-1.jpg) no-repeat 0px 0px;
+    background: url(../images/header-img.jpg) no-repeat 0px -205px;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -400,14 +400,14 @@ h3.heading:after {
     text-decoration: none;
 }
 .teploopt-heatPump-img2 a {
-    background: url(../images/blog-heatPump/Heat-pump-1.jpg) no-repeat 0px -100px;
+    background: url(../images/blog-heatPump/Heat-pump-12.jpg) no-repeat 0px -100px;
     background-size: cover;
     min-height:700px;
     display: block;
     text-decoration: none;
 }
 .teploopt-heatPump-img3 a {
-    background: url(../images/blog-heatPump/Heat-pump-2.jpg) no-repeat 0px 0px;
+    background: url(../images/blog-heatPump/Heat-pump-22.jpg) no-repeat 0px 0px;
     background-size: cover;
     min-height:300px;
     display: block;
@@ -724,7 +724,7 @@ figure.effect-jazz {
 
 figure.effect-jazz img {
     opacity: 0.8;
-    height: 350px;
+    height: 319px;
 }
 figure.effect-jazz figcaption::after,
 figure.effect-jazz img,
