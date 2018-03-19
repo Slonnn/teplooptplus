@@ -107,9 +107,10 @@ a:focus, a:hover {
     margin-bottom: 0;
 }
 .navbar-brand > img {
-    width: 450px;
-    height: 4em;
+    width: 200px;
+    height: 10em;
     margin-top: 10px;
+    margin-left: 70px;
     /*text-transform: uppercase;*/
 }
 /*.navbar-brand span {*/
@@ -133,6 +134,7 @@ a:focus, a:hover {
     color: #ff6b61;
     background: none;
 }
+
 .navbar-nav > li > a {
     padding: 15px;
     text-transform: uppercase;
@@ -151,12 +153,12 @@ a:focus, a:hover {
 }
 .navbar-right {
     float: none !important;
-    margin-top: 25px;
+    margin-top: 76px;
     margin-right: 0;
     margin-left: 0em;
 }
 .navbar-nav {
-    margin-left: 200px;
+    margin-left: 400px;
     margin-top: 10px;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
@@ -214,6 +216,7 @@ ul.dropdown-menu {
 ul.top-links.social {
     float: right;
     margin-top: 15px;
+    margin-right: 70px;
 }
 ul.top-links.social li {
     display: inline-block;
@@ -273,7 +276,7 @@ ul.top-links.social li {
     margin: 20px auto 40px;
     width: 65%;
     letter-spacing: 1px;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
 }
 .agileinfo-news-button a {
     padding: 8px 20px;
@@ -360,9 +363,10 @@ h3.heading:after {
     border: 1px solid #ddd;
     padding: 3em 2em;
 }
-/*.aboutbottomleft img, .abouttopright img{*/
-    /*height: 300px;*/
-/*}*/
+/* .abouttopright {
+    background-image: url(../images/gallery/gallery-1.jpg) no-repeat 0px 0px;
+    height: 300px;
+} */
 .abouttop {
     margin-bottom: 3em;
     margin-top: 3em;
@@ -374,6 +378,7 @@ h3.heading:after {
     color: #ff6b61;
     line-height: 40px;
     margin-bottom: 1em;
+    cursor: pointer;
 }
 .about p {
     font-size: 16px;
@@ -386,6 +391,32 @@ h3.heading:after {
     color: #3169ff;
     font-size: 20px;
     margin-right: .5em;
+}
+ /* .aboutbottomleft img{
+    width: 540px;
+    height: 300px;
+    object-fit: cover;
+} */
+.abouttopright-img img{
+    width: 540px;
+    height: 453px;
+    
+}
+.about-pop-up{
+    cursor: pointer;
+    overflow:hidden;
+}
+.about-pop-up img{
+    object-fit: cover;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+}
+.about-pop-up img:hover{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+
 }
 /* //about */
 /* --blog Heat pump-- */
@@ -464,6 +495,7 @@ video{
     overflow: hidden;
     background: #fff;
     border:3px solid #fff;
+    overflow:hidden;
     -webkit-transition-property: color;
     transition-property: color;
     -webkit-transition-duration: 0.3s;
@@ -477,26 +509,34 @@ video{
 .hvr-radial-in:hover, .hvr-radial-in:focus, .hvr-radial-in:active {
    border:3px solid #ff6b61;
 }
+.hvr-radial-in img{
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+}
 .hvr-radial-in img:hover{
     width: 105%;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
 }
 
 .services-icon-info h5{
     color: #000000;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     font-size: 21px;
     margin: 2em 0 0 0;
     transition: 1.4s ease-out;
 }
 .services-icon-info h5 a{
     color: #000000;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     font-size: 21px;
     margin: 2em 0 0 0;
 }
 .services-icon-info h5 :hover{
     color: #fdffe5;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     top: 20px;
     letter-spacing: 2px;
 }
@@ -508,7 +548,7 @@ video{
     font-size: 16px;
     margin: 1.5em 0 0 0;
     line-height: 1.8em;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     letter-spacing: .5px;
 }
 .services h3.heading {
@@ -525,7 +565,7 @@ video{
 .wthree_copy_right p{
 	color:#fff;
 	line-height:1.8em;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     font-size: 14px;
     letter-spacing: 2px;
 }
@@ -677,7 +717,7 @@ video{
 }
 
 .grid figure figcaption {
-	padding: 2em;
+	/* padding: 2em; */
 	color: #fff;
 	font-size: 0.9em;
 	-webkit-backface-visibility: hidden;
@@ -1152,6 +1192,13 @@ h4.text {
 }
 /*--//review--*/
 
+/* logo-firm */
+marquee img{
+    width: 300px;
+    height: 100px;
+    margin: 60px 40px;
+}
+/* //logo-firm */
 /*-- blog --*/
 .teploopt-post-img a {
     background: url(../images/gallery/gallery-6.jpg) no-repeat 0px 0px;
@@ -1284,14 +1331,19 @@ div#blog {
 
 /*service ing-text*/
 .modal-service .modal-dialog, .modal-service .modal-personal{
-    width: 400px!important;
+    width: 400px;
+}
+.modal-shop{
+    width: 1200px!important;
+    background: rgb(231, 223, 223);
 }
 .carousel-control{
     background: none!important;
 }
 .carousel-inner .item img{
     width: 100%;
-    height: auto;
+    height: 787px;
+    object-fit: cover;
 }
 .carousel-inner .item .text-goods{
     text-align: center;
@@ -1506,6 +1558,7 @@ div#blog {
 .callbacks li {
     position: absolute;
     width: 100%;
+    height: 630p
 }
 
 .callbacks img {
@@ -1672,7 +1725,7 @@ div#blog {
 
 @media (max-width:1920px) {
 	.navbar-nav {
-		margin-left: 8em;
+		margin-left: 42em;
 	}
 	.second-effect .mask h6 {
 		padding: 4.5em 0 0em;
@@ -1726,9 +1779,33 @@ div#blog {
 }
 @media (max-width:1080px) {
 	.navbar-nav {
-        margin-left: 3em;
+        margin-left: 1em;
         padding-top: 25px;
-	}
+    }
+    .navbar-brand img {
+        width: 130px;
+        height: 130px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .navbar-right{
+        margin-top: 31px;
+    }
+    ul.top-links.social {
+        margin-top: 42px;
+    }
+    .teplo-banner {
+        background: url(../images/header-img.jpg) no-repeat 0px 0px;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        -ms-background-size: cover;
+    }
+    .abouttopright-img img {
+        width: 440px;
+        height: 385px;
+    }
 	.teplo-info h2, .teplo-info h3 {
 		letter-spacing: .3em;
 	}
@@ -1743,16 +1820,41 @@ div#blog {
 		line-height: 34px;
 	}
 	.about p {
-		font-size: 15px;
+		font-size: 14px;
 		margin: .5em 0;
 		line-height: 28px;
 	}
 	.abouttopleft, .aboutbottomright {
-		padding: 2em 1em;
+		padding: 20px 1em;
 	}
 	.abouttopleft h3, .aboutbottomright h3 {
 		font-size: 23px;
-	}
+    }
+    .modal-shop {
+        width: 900px!important;
+    }
+    .carousel-inner .item img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+    .teploopt-heatPump-img2 a {
+        background: url(../images/blog-heatPump/Heat-pump-12.jpg) no-repeat 0px 0px;
+        background-size: cover;
+    }
+    figure.effect-jazz img {
+        height: auto;
+    }
+    figure.effect-jazz h4, figure.effect-jazz p {
+        padding-top: opx;
+        font-size: 1.5em;
+    }
+    .modal-personal {
+        left: -76px;
+    }
+    .callbacks1_on{
+        height: 630px;
+    }
 	.services-icon-info h5 {
 		font-size: 19px;
 	}
@@ -1773,7 +1875,15 @@ div#blog {
 @media (max-width:1050px) {
 	.navbar-nav > li > a {
 		padding: 15px 11px;
-	}
+    }
+    marquee img {
+        width: 200px;
+        height: 66px;
+        margin: 40px 40px 0 40px;
+    }
+    .contact{
+        padding: 2em 0 0;
+    }
 }
 @media (max-width:1024px) {
 	.flexslider-info {
@@ -1808,6 +1918,9 @@ div#blog {
 	}
 	.aboutbottomright {
 		margin-top: 2em;
+    }
+    .abouttopright-img img {
+        width: 690px;
     }
     .services{
         height: 100%;
@@ -1856,16 +1969,26 @@ div#blog {
     }
 }
 @media (max-width: 900px) {
-    .navbar-brand > img {
-        width: 350px;
+    .navbar-nav{
+        margin-top: 0px;
+        padding-top: 0px;
     }
-	.navbar-nav {
-		margin-left: 12em;
-	}
+    .navbar-default .navbar-collapse {
+        margin-top: 61px;
+        margin-left: 157px;
+    }
 	ul.top-links.social {
 		position: absolute;
-		right: 2%;
-	}
+        right: 2%;
+        margin-top: 7px;
+        margin-right: 0px;
+    }
+    .modal-shop {
+        width: 859px!important;
+    }
+    .grid-top-1 {
+        top: -269px;
+    }
 	.flexslider-info {
 		margin: 9em 0em;
 	}
@@ -1879,13 +2002,23 @@ div#blog {
 		min-height: 500px;
     }
     .teploopt {
-        margin-left: 108px!important;
+        margin-left: -17px!important;
     }
 }
 @media (max-width:800px) {
-	.navbar-nav {
-		margin-left: 11em;
-	}
+	.navbar-default .navbar-collapse {
+        margin-left: 133px;
+    }
+    ul.top-links.social {
+        right: 41%;
+        margin-top: 59px;
+    }
+    .modal-shop {
+        width: 765px!important;
+    }
+    .carousel-inner .item img {
+        height: 410px;
+    }
 	.teplo-info h2, .teplo-info h3 {
 		font-size: 2.6em;
 	}
@@ -1904,6 +2037,11 @@ div#blog {
     .banner-info_teploopt p {
         font-size: 1.2em;
     }
+    marquee img {
+        width: 200px;
+        height: 60px;
+        margin: 40px 40px 0 40px;
+    }
     .teploopt {
         margin-left: 0px!important;
     }
@@ -1914,7 +2052,10 @@ div#blog {
 @media (max-width:768px) {
 	.navbar-nav {
 		margin-left: 9em;
-	}
+    }
+    ul.top-links.social {
+        margin-top: 13px; 
+    }
 	.second-effect .mask h6 {
 		padding: 4em 0 0em;
 	}
@@ -1924,12 +2065,23 @@ div#blog {
     .modal-personal{
         left: -68px!important;
     }
+    .teploopt {
+        margin-left: -17px!important;
+    }
 }
 @media (max-width:736px) {
+    .navbar-nav{
+        display: block!important;
+    }
 	.navbar-default .navbar-toggle .icon-bar {
 		background-color: #eee;
-	}
+    }
+    .navbar-default .navbar-collapse {
+        margin-left: 118px;
+    }
 	.navbar-toggle {
+        margin-top: 70px;
+        margin-right: 58px;
 		border-radius: 0px;
 	}
 	.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
@@ -1946,10 +2098,10 @@ div#blog {
 	}
 	div#bs-example-navbar-collapse-1 {
 		position: absolute;
-		width: 100%;
-		background: #3169ff;
-		z-index: 999;
-		padding: 1em 0 2em;
+        width: 66%;
+        background: #3169ff;
+        z-index: 999;
+        padding: 1em 0 2em;
 	}
 	.navbar-nav {
 		margin: 0;
@@ -1984,7 +2136,16 @@ div#blog {
 	}
 	.bottomleft h3 {
 		font-size: 20px;
-	}
+    }
+    .modal-shop {
+        width: 637px!important;
+    }
+    .carousel-inner .item img {
+        height: 506px;
+    }
+    .abouttopright-img img {
+        width: 607px;
+    }
 	.second-effect .mask h6 {
 		padding: 3.5em 0 0em;
 	}
@@ -1997,6 +2158,7 @@ div#blog {
     .modal-service-up{
         left: 122px;
     }
+    
     .teploopt {
         margin-left: -35px!important;
     }
@@ -2011,6 +2173,12 @@ div#blog {
 	.second-effect .mask h6 {
 		padding: 3em 0 0em;
     }
+    .abouttopright-img img {
+        width: 540px;
+    }
+    .modal-shop {
+        width: 579px!important;
+    }
     .modal-service-up{
         left: 92px;
     }
@@ -2021,7 +2189,7 @@ div#blog {
         padding-left: 32px;
     }
     .modal-personal{
-        left: 71px!important;
+        left: 66px!important;
     }
 }
 @media (max-width:480px) {
@@ -2029,12 +2197,21 @@ div#blog {
         display: none;
     }
     .navbar-toggle{
-        margin-top: 44px;
+        margin-top: 71px;
+    }
+    .navbar-default .navbar-collapse {
+        margin-left: 78px;
+    }
+    .modal-shop {
+        width: 458px!important;
+    }
+    .abouttopright-img img {
+        width: 450px;
     }
 	.abouttopleft h3, .aboutbottomright h3 {
 		font-size: 20px;
 		margin-bottom: 0em;
-	}
+    }
 	.abouttop .col-md-6 ,.aboutbottom .col-md-6 {
 		padding: 0 0px;
 	}
@@ -2073,7 +2250,10 @@ div#blog {
 		margin-right: 0px;
 	}
     .teploopt {
-        margin-left: -212px!important;
+        margin-left: -257px!important;
+    }
+    .grid figure figcaption {
+        font-size: 1.2em;
     }
     .modal-personal{
         left: 5px!important;
@@ -2083,9 +2263,6 @@ div#blog {
     }
 }
 @media (max-width:440px) {
-    .navbar-brand > img {
-        width: 250px;
-    }
 	.grid figure figcaption {
 		padding: 2em 0em;
     }
@@ -2093,11 +2270,27 @@ div#blog {
         width: 100%;
         padding-left: 247px!important;
     }
+    .abouttopright-img img {
+        width: 410px;
+    }
+    .modal-shop {
+        width: 419px!important;
+    }
+    .carousel-inner .item img {
+        height: 306px;
+    }
+    .modal-header {
+        font-size: 1.2em;
+    }
+    .teploopt-heatPump-img1 a {
+        background: url(../images/blog-heatPump/Heat-pump.jpg) no-repeat 0px 0px;
+        background-size: cover;
+    }
     .modal-service-up{
         left: 10px;
     }
     .teploopt {
-        margin-left: -251px!important;
+        margin-left: -297px!important;
     }
     .modal-personal{
         width: 414px!important;
@@ -2113,11 +2306,6 @@ div#blog {
         min-height:500px;
         background-size: auto;
     }
-    .teploopt-heatPump-img2 a {
-        background: url(../images/blog-heatPump/Heat-pump-1.jpg) no-repeat 0px -250px;
-        min-height:500px;
-        background-size: auto;
-    }
     .teploopt-heatPump-img4 a {
         background: url(../images/blog-heatPump/Heat-pump-3.jpg) no-repeat -72px 0px;
         background-size: cover;
@@ -2125,8 +2313,17 @@ div#blog {
         display: block;
         text-decoration: none;
     }
+    .abouttopright-img img {
+        width: 395px;
+    }
+    figure.effect-jazz h4 {
+        padding-top: 67%;
+    }
     .teploopt {
-        margin-left: -266px!important;
+        margin-left: -305px!important;
+    }
+    .modal-shop {
+        width: 403px!important;
     }
     .modal-personal{
         width: 395px!important;
@@ -2150,7 +2347,13 @@ div#blog {
 	}
 	.grid figure {
 		margin-bottom: 2%;
-	}
+    }
+    .abouttopright-img img {
+        width: 384px;
+    }
+    .modal-shop {
+        width: 393px!important;
+    }
 	.second-effect .mask h6 {
 		padding: 5em 0 0em;
 	}
@@ -2179,7 +2382,7 @@ div#blog {
         left: -3px;
     }
     .teploopt {
-        margin-left: -277px!important;
+        margin-left: -317px!important;
     }
     .h-f {
         width: 100%;
@@ -2192,7 +2395,7 @@ div#blog {
 }
 @media (max-width:384px) {
     .teploopt-heatPump-img3 a {
-        background: url(../images/blog-heatPump/Heat-pump-2.jpg) no-repeat -110px 0px;
+        background: url(../images/blog-heatPump/Heat-pump-22.jpg) no-repeat -110px 0px;
     background-size: cover;
     display: block;
     }
@@ -2202,15 +2405,21 @@ div#blog {
 	.h-f {
         width: 100%;
         padding-left: 276px!important;
-	}
+    }
+    .abouttopright-img img {
+        width: 354px;
+    }
+    .modal-shop {
+        width: 365px!important;
+    }
 	.second-effect .mask h6 {
 		padding: 4.5em 0 0em;
 	}
 	.teploopt-post-img a {
-		min-height: 160px;
+		min-height: 380px;
     }
 	.modal-header {
-		font-size: 1.8em;
+		font-size: 1.2em;
 		letter-spacing: 3px;
     }
     .modal-service-up{
@@ -2218,7 +2427,7 @@ div#blog {
         width: 362px;
     }
     .teploopt {
-        margin-left: -307px!important;
+        margin-left: -341px!important;
     }
     .modal-personal {
         width: 353px!important;
@@ -2234,6 +2443,12 @@ div#blog {
 	.contact iframe {
 		height: 300px;
     }
+    .abouttopright-img img {
+        width: 345px;
+    }
+    .modal-shop {
+        width: 354px!important;
+    }
 	.teplo-info h2, .teplo-info h3 {
 		font-size: 1.8em;
 	}
@@ -2245,7 +2460,7 @@ div#blog {
 		right: 41%;
     }
     .banner-info_teploopt .call{
-        font-size: 28px;
+        font-size: 22px;
     }
     .modal-personal{
         width: 344px!important;
@@ -2255,7 +2470,7 @@ div#blog {
         width: 362px;
     }
     .teploopt {
-        margin-left: -316px!important;
+        margin-left: -346px!important;
     }
     .h-f {
         width: 100%;
@@ -2274,7 +2489,16 @@ div#blog {
 	}
 	.bottomleft h3 {
 		font-size: 18px;
-	}
+    }
+    .abouttopright-img img {
+        width: 290px;
+    }
+    .modal-header {
+        font-size: 1.2em;
+    }
+    .modal-shop {
+        width: 300px!important;
+    }
 	.second-effect .mask h6 {
 		padding: 3.5em 0 0em;
 	}
@@ -2285,7 +2509,7 @@ div#blog {
 		right: 40%;
 	}
 	figure.effect-jazz h4 {
-		padding-top: 45%;
+		padding-top: 65%;
     }
     .teploopt-heatPump-img1 a {
         background: url(../images/blog-heatPump/Heat-pump.jpg) no-repeat 0px -443px;
@@ -2293,9 +2517,9 @@ div#blog {
         background-size: auto;
     }
     .teploopt-heatPump-img2 a {
-        background: url(../images/blog-heatPump/Heat-pump-1.jpg) no-repeat 0px -443px;
+        background: url(../images/blog-heatPump/Heat-pump-12.jpg) no-repeat 0px -132px;
         min-height: 300px;
-        background-size: auto;
+        background-size: cover;
     }
     .teploopt-heatPump-img4 a {
         background: url(../images/blog-heatPump/Heat-pump-3.jpg) no-repeat -121px 0px;
@@ -2321,7 +2545,7 @@ div#blog {
         width: 306px;
     }
     .teploopt {
-        margin-left: -371px!important;
+        margin-left: -388px!important;
     }
     .h-f {
         width: 100%;
